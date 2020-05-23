@@ -4,13 +4,18 @@
   "description": "A Remark plugin that parses footer elements according to the proposal at https://talk.commonmark.org/t/syntax-for-footer/2070",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "tokenize.js"
   ],
   "repository": "https://github.com/david-mitchell/remark-footer",
   "author": "Amanda Mitchell",
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "remark-html": "^11.0.2",
+    "remark-parse": "^8.0.2",
+    "unified": "^9.0.0",
+    "unist-builder": "^2.0.3"
   }
 }
