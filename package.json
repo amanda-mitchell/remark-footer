@@ -1,5 +1,5 @@
 {
-  "name": "@david-mitchell/remark-footer",
+  "name": "@amanda-mitchell/remark-footer",
   "version": "1.0.0",
   "description": "A Remark plugin that parses footer elements according to the proposal at https://talk.commonmark.org/t/syntax-for-footer/2070",
   "main": "index.js",
@@ -7,12 +7,12 @@
     "index.js",
     "tokenize.js"
   ],
-  "repository": "https://github.com/david-mitchell/remark-footer",
+  "repository": "https://github.com/amanda-mitchell/remark-footer",
   "author": "Amanda Mitchell",
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@david-mitchell/node-project-scripts": "^1.1.1",
+    "@amanda-mitchell/node-project-scripts": "^2.0.0",
     "jest": "^26.0.1",
     "remark-html": "^11.0.2",
     "remark-parse": "^8.0.2",
