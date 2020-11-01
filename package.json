@@ -11,6 +11,9 @@
   "author": "Amanda Mitchell",
   "license": "MIT",
   "private": false,
+  "peerDependencies": {
+    "remark-parse": ">=8.0.2 < 9.0.0"
+  },
   "devDependencies": {
     "@amanda-mitchell/node-project-scripts": "^2.0.0",
     "jest": "^26.0.1",
