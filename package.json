@@ -15,7 +15,7 @@
     "remark-parse": ">=8.0.2 < 9.0.0"
   },
   "devDependencies": {
-    "@amanda-mitchell/node-project-scripts": "^2.0.0",
+    "@amanda-mitchell/node-project-scripts": "^2.4.1",
     "jest": "^26.0.1",
     "remark-html": "^11.0.2",
     "remark-parse": "^8.0.2",
