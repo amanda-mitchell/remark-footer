@@ -13,8 +13,6 @@ jobs:
           node-version: 12
       - run: yarn --frozen-lockfile --ignore-scripts
       - run: yarn jest
-        env:
-          BIBLIA_API_KEY: ${{ secrets.BIBLIA_API_KEY }}
   release:
     needs: build
     runs-on: ubuntu-latest
