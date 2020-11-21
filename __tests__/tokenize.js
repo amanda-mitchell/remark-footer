@@ -19,7 +19,7 @@ function tokenizeWithContext(
 }
 
 test('it skips lines that do not have the prefix.', () => {
-  const eat = jest.fn(prefix => node => node);
+  const eat = jest.fn(() => node => node);
 
   const result = tokenizeWithContext(eat, 'A normal paragraph.', false);
 
@@ -28,12 +28,12 @@ test('it skips lines that do not have the prefix.', () => {
 });
 
 test('it eats a line that begins with ^^', () => {
-  const eat = jest.fn(prefix => node => node);
+  const eat = jest.fn(() => node => node);
   const nowResult = Symbol();
   eat.now = () => nowResult;
 
   const tokenizeInlineResult = Symbol();
-  const tokenizeInline = jest.fn((text, now) => tokenizeInlineResult);
+  const tokenizeInline = jest.fn(() => tokenizeInlineResult);
 
   const result = tokenizeWithContext(eat, '^^A footer.', false, tokenizeInline);
   expect(result).toEqual({
@@ -47,12 +47,12 @@ test('it eats a line that begins with ^^', () => {
 });
 
 test('it skips spaces and tabs after ^^', () => {
-  const eat = jest.fn(prefix => node => node);
+  const eat = jest.fn(() => node => node);
   const nowResult = Symbol();
   eat.now = () => nowResult;
 
   const tokenizeInlineResult = Symbol();
-  const tokenizeInline = jest.fn((text, now) => tokenizeInlineResult);
+  const tokenizeInline = jest.fn(() => tokenizeInlineResult);
 
   const result = tokenizeWithContext(
     eat,
@@ -71,12 +71,12 @@ test('it skips spaces and tabs after ^^', () => {
 });
 
 test('it does not consume a trailing newline.', () => {
-  const eat = jest.fn(prefix => node => node);
+  const eat = jest.fn(() => node => node);
   const nowResult = Symbol();
   eat.now = () => nowResult;
 
   const tokenizeInlineResult = Symbol();
-  const tokenizeInline = jest.fn((text, now) => tokenizeInlineResult);
+  const tokenizeInline = jest.fn(() => tokenizeInlineResult);
 
   const result = tokenizeWithContext(
     eat,
@@ -95,12 +95,12 @@ test('it does not consume a trailing newline.', () => {
 });
 
 test('it consumes multiple lines.', () => {
-  const eat = jest.fn(prefix => node => node);
+  const eat = jest.fn(() => node => node);
   const nowResult = Symbol();
   eat.now = () => nowResult;
 
   const tokenizeInlineResult = Symbol();
-  const tokenizeInline = jest.fn((text, now) => tokenizeInlineResult);
+  const tokenizeInline = jest.fn(() => tokenizeInlineResult);
 
   const result = tokenizeWithContext(
     eat,
@@ -123,12 +123,12 @@ test('it consumes multiple lines.', () => {
 });
 
 test('it stops at multiple newlines.', () => {
-  const eat = jest.fn(prefix => node => node);
+  const eat = jest.fn(() => node => node);
   const nowResult = Symbol();
   eat.now = () => nowResult;
 
   const tokenizeInlineResult = Symbol();
-  const tokenizeInline = jest.fn((text, now) => tokenizeInlineResult);
+  const tokenizeInline = jest.fn(() => tokenizeInlineResult);
 
   const result = tokenizeWithContext(
     eat,
@@ -147,12 +147,12 @@ test('it stops at multiple newlines.', () => {
 });
 
 test('it strips prefixes from trailing lines.', () => {
-  const eat = jest.fn(prefix => node => node);
+  const eat = jest.fn(() => node => node);
   const nowResult = Symbol();
   eat.now = () => nowResult;
 
   const tokenizeInlineResult = Symbol();
-  const tokenizeInline = jest.fn((text, now) => tokenizeInlineResult);
+  const tokenizeInline = jest.fn(() => tokenizeInlineResult);
 
   const result = tokenizeWithContext(
     eat,
@@ -175,12 +175,12 @@ test('it strips prefixes from trailing lines.', () => {
 });
 
 test('it returns true when silent.', () => {
-  const eat = jest.fn(prefix => node => node);
+  const eat = jest.fn(() => node => node);
   const nowResult = Symbol();
   eat.now = () => nowResult;
 
   const tokenizeInlineResult = Symbol();
-  const tokenizeInline = jest.fn((text, now) => tokenizeInlineResult);
+  const tokenizeInline = jest.fn(() => tokenizeInlineResult);
 
   const result = tokenizeWithContext(
     eat,

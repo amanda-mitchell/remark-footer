@@ -39,7 +39,7 @@ test('it sets up the new tokenizer', () => {
 
 describe('integration tests', () => {
   function nullCompiler() {
-    this.Compiler = (tree, _file) => tree;
+    this.Compiler = tree => tree;
   }
 
   function createProcessor() {
