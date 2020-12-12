@@ -27,6 +27,7 @@ jobs:
         run: yarn --frozen-lockfile --ignore-scripts
       - name: Release
         env:
+          DEPENDABOT_TOKEN: ${{ secrets.PRIVATE_PACKAGE_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_NPM_CONFIG_REGISTRY: https://npm.pkg.github.com/
