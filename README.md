@@ -1,4 +1,4 @@
-# remark-footer
+# @amanda-mitchell/remark-footer
 
 There is a current proposal for a CommonMark extension for a footer element here:
 https://talk.commonmark.org/t/syntax-for-footer/2070
@@ -8,7 +8,7 @@ This package implements that proposal as a remark-parse plugin.
 ## Installation
 
 ```
-yarn add remark-footer
+yarn add @amanda-mitchell/remark-footer
 ```
 
 ## Use
@@ -20,7 +20,7 @@ const vfile = require('to-vfile');
 const report = require('vfile-reporter');
 const unified = require('unified');
 const parse = require('remark-parse');
-const { footers } = require('remark-footer');
+const { footers } = require('@amanda-mitchell/remark-footer');
 const remark2rehype = require('remark-rehype');
 const stringify = require('rehype-stringify');
 
