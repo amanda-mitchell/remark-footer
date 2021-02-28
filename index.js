@@ -1,6 +1,3 @@
-const { tokenizeFooter } = require('./tokenize');
-const syntax = require('@amanda-mitchell/micromark-extension-footer');
-
 const fromMarkdown = {
   enter: {
     footer(token) {
@@ -23,6 +20,7 @@ function footers() {
   const interruptParagraph = Parser.prototype.interruptParagraph;
   if (interruptParagraph) {
     // Support for remark-parse 8.0.2
+    const { tokenizeFooter } = require('./tokenize');
 
     Parser.prototype.interruptFooter = [...interruptParagraph];
     interruptParagraph.push(['footer']);
@@ -34,6 +32,12 @@ function footers() {
     methods.splice(methods.indexOf('paragraph'), 0, 'footer');
   } else {
     // Support for remark-parse 9.0.0
+    // NOTE: While it's unusual for require calls to not be
+    // at the beginning of a module, in this case it's important
+    // because micromark-extension-footer assumes that micromark
+    // will be available, and this is not likely to be the case when running
+    // remark-parse < 9.0.0.
+    const syntax = require('@amanda-mitchell/micromark-extension-footer');
     const data = this.data();
 
     if (data.micromarkExtensions) {
