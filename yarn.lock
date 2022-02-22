@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@amanda-mitchell/micromark-extension-footer@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@amanda-mitchell/micromark-extension-footer/-/micromark-extension-footer-1.0.0.tgz#eb4d889c0df0410f154010ff9c78fc2854574229"
-  integrity sha512-t8SJ7IIL6YoCzSFokL5xmi5KMs60nayGFRnIfYFQXelKSS0yU5acB5vW74I7h9w1JF1fkGuHablCir3mMtbFWg==
+"@amanda-mitchell/micromark-extension-footer@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/micromark-extension-footer/-/micromark-extension-footer-2.0.0.tgz#0c240ef82e8806cd703052668b4cf09ca6138871"
+  integrity sha512-q8p5/vGznsqDaZcr7QbWN1rFK3LBldMrb3c+YY9pIzhj1a+FlF4d6g2hDK1dmrJxUNvfzd8rx5q4NwiRE+OnXg==
 
 "@amanda-mitchell/node-project-scripts@3.0.11":
   version "3.0.11"

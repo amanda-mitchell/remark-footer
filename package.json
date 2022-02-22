@@ -35,6 +35,6 @@
     "unist-builder": "^2.0.3"
   },
   "dependencies": {
-    "@amanda-mitchell/micromark-extension-footer": "^1.0.0"
+    "@amanda-mitchell/micromark-extension-footer": "^2.0.0"
   }
 }
