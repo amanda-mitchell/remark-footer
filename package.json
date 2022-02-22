@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A Remark plugin that parses footer elements according to the proposal at https://talk.commonmark.org/t/syntax-for-footer/2070",
   "main": "index.js",
+  "type": "module",
   "files": [
     "index.js",
     "tokenize.js"
@@ -23,14 +24,13 @@
     "markdown"
   ],
   "peerDependencies": {
-    "remark-parse": ">=8.0.2 < 10.0.0"
+    "remark-parse": ">=9.0.0 < 10.0.0"
   },
   "devDependencies": {
-    "@amanda-mitchell/node-project-scripts": "^2.65.1",
+    "@amanda-mitchell/node-project-scripts": "3.0.11",
     "jest": "^26.6.3",
     "remark-html": "^13.0.1",
     "remark-parse": "^9.0.0",
-    "remark-parse-version-8": "npm:remark-parse@~8.0.2",
     "unified": "^9.0.0",
     "unist-builder": "^2.0.3"
   },

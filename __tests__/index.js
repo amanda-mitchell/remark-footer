@@ -1,8 +1,8 @@
-const unified = require('unified');
-const markdown = require('remark-parse');
-const html = require('remark-html');
-const build = require('unist-builder');
-const { footers } = require('..');
+import unified from 'unified';
+import markdown from 'remark-parse';
+import html from 'remark-html';
+import build from 'unist-builder';
+import { footers } from '../index.js';
 
 describe('integration tests', () => {
   function nullCompiler() {
