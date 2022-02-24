@@ -30,7 +30,7 @@
     "@amanda-mitchell/node-project-scripts": "3.4.0",
     "jest": "^27.5.1",
     "remark-html": "^13.0.1",
-    "remark-parse": "^9.0.0",
+    "remark-parse": "^10.0.1",
     "unified": "^9.0.0",
     "unist-builder": "^2.0.3"
   },
