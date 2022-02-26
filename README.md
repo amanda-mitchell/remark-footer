@@ -16,13 +16,13 @@ yarn add @amanda-mitchell/remark-footer
 Construct a unified parser and pass `footers` to it as a plugin:
 
 ```js
-const vfile = require('to-vfile');
-const report = require('vfile-reporter');
-const unified = require('unified');
-const parse = require('remark-parse');
-const { footers } = require('@amanda-mitchell/remark-footer');
-const remark2rehype = require('remark-rehype');
-const stringify = require('rehype-stringify');
+import vfile from 'to-vfile';
+import report from 'vfile-reporter';
+import { unified } from 'unified';
+import parse from 'remark-parse';
+import { footers } from '@amanda-mitchell/remark-footer';
+import remark2rehype from 'remark-rehype';
+import stringify from 'rehype-stringify';
 
 const document = `^^ a footer`;
 

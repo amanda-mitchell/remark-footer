@@ -1,8 +1,9 @@
-import unified from 'unified';
+import { unified } from 'unified';
 import markdown from 'remark-parse';
 import html from 'remark-html';
-import build from 'unist-builder';
+import { u as build } from 'unist-builder';
 import { footers } from '../index.js';
+import { defaultSchema } from 'hast-util-sanitize';
 
 describe('integration tests', () => {
   function nullCompiler() {
@@ -102,14 +103,23 @@ describe('integration tests', () => {
 
 describe('html generation integration tests', () => {
   function createProcessor() {
-    return unified().use(markdown).use(footers).use(html).freeze();
+    return unified()
+      .use(markdown)
+      .use(footers)
+      .use(html, {
+        sanitize: {
+          ...defaultSchema,
+          tagNames: [...defaultSchema.tagNames, 'footer'],
+        },
+      })
+      .freeze();
   }
 
   test('it generates the correct html element', async () => {
     const processor = createProcessor();
 
-    const { contents } = await processor.process('^^ A footer');
+    const { value } = await processor.process('^^ A footer');
 
-    expect(contents).toEqual('<footer><p>A footer</p></footer>\n');
+    expect(value).toEqual('<footer><p>A footer</p></footer>\n');
   });
 });

@@ -24,17 +24,18 @@
     "markdown"
   ],
   "peerDependencies": {
-    "remark-parse": ">=9.0.0 < 10.0.0"
+    "remark-parse": ">=10.0.1 < 11.0.0"
   },
   "devDependencies": {
     "@amanda-mitchell/node-project-scripts": "3.4.0",
+    "hast-util-sanitize": "^4.0.0",
     "jest": "^27.5.1",
-    "remark-html": "^13.0.1",
-    "remark-parse": "^9.0.0",
-    "unified": "^9.0.0",
-    "unist-builder": "^2.0.3"
+    "remark-html": "^15.0.1",
+    "remark-parse": "^10.0.1",
+    "unified": "^10.1.1",
+    "unist-builder": "^3.0.0"
   },
   "dependencies": {
-    "@amanda-mitchell/micromark-extension-footer": "^2.0.0"
+    "@amanda-mitchell/micromark-extension-footer": "^3.0.0"
   }
 }
