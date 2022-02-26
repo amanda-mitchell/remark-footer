@@ -45,10 +45,5 @@ When run, this script will print
 
 ## Implementation notes
 
-This package will work with either version 8 or 9 of remark-parse.
-However, the html generation is slightly different with version 9:
-footer text will always be wrapped in `<p>` tags, even when it would be reasonable to omit them.
-I'd be happy to accept a PR that improves this behavior!
-
 Many `remark-parse` plugins also provide behavior to serialize an mdast syntax tree back to markdown.
 This plugin does not support this, but again, I'd be happy to accept a PR that adds the feature!
