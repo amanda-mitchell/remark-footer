@@ -33,7 +33,7 @@
     "remark-html": "^15.0.1",
     "remark-parse": "^10.0.1",
     "unified": "^11.0.0",
-    "unist-builder": "^3.0.0"
+    "unist-builder": "^4.0.0"
   },
   "dependencies": {
     "@amanda-mitchell/micromark-extension-footer": "^3.0.0"
