@@ -5,7 +5,7 @@ const fromMarkdown = {
     footer(token) {
       this.enter(
         { type: 'footer', data: { hName: 'footer' }, children: [] },
-        token
+        token,
       );
     },
   },
