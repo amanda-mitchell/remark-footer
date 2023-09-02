@@ -24,7 +24,7 @@ describe('integration tests', () => {
         build('footer', [
           build('paragraph', [build('text', 'Just a footer.')]),
         ]),
-      ])
+      ]),
     );
   });
 
@@ -32,7 +32,7 @@ describe('integration tests', () => {
     const processor = createProcessor();
 
     const { result } = await processor.process(
-      '^^ Just a footer.\n^^ With a second line.'
+      '^^ Just a footer.\n^^ With a second line.',
     );
 
     expect(result).toMatchObject(
@@ -42,7 +42,7 @@ describe('integration tests', () => {
             build('text', 'Just a footer.\nWith a second line.'),
           ]),
         ]),
-      ])
+      ]),
     );
   });
 
@@ -60,7 +60,7 @@ describe('integration tests', () => {
           build('paragraph', [build('text', 'Inspiring quotation')]),
           build('footer', [build('paragraph', [build('text', 'Source')])]),
         ]),
-      ])
+      ]),
     );
   });
 
@@ -77,7 +77,7 @@ describe('integration tests', () => {
           build('paragraph', [build('text', 'Inspiring quotation')]),
           build('footer', [build('paragraph', [build('text', 'Source')])]),
         ]),
-      ])
+      ]),
     );
   });
 
@@ -96,7 +96,7 @@ describe('integration tests', () => {
         build('list', { ordered: false }, [
           build('listItem', [build('paragraph', [build('text', 'A bullet')])]),
         ]),
-      ])
+      ]),
     );
   });
 });
