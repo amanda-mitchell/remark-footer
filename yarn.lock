@@ -3357,9 +3357,9 @@ hast-util-raw@^9.0.0:
     zwitch "^2.0.0"
 
 hast-util-sanitize@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/hast-util-sanitize/-/hast-util-sanitize-5.0.0.tgz#041ef2247fe8f34b5f2bb4398c545e465e5a8c0e"
-  integrity sha512-L0g/qhOA82zG2hA3O29hnlv4mLU7YVVT1if5JZSr2tKO1ywkQbuMDcN05btgX0HtpqDXQniAM0ar0K+Lv4MDBQ==
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/hast-util-sanitize/-/hast-util-sanitize-5.0.1.tgz#8e90068cd68e651c569960b77a1b25076579b4cf"
+  integrity sha512-IGrgWLuip4O2nq5CugXy4GI2V8kx4sFVy5Hd4vF7AR2gxS0N9s7nEAVUyeMtZKZvzrxVsHt73XdTsno1tClIkQ==
   dependencies:
     "@types/hast" "^3.0.0"
     "@ungap/structured-clone" "^1.2.0"
