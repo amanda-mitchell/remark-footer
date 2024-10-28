@@ -1675,7 +1675,7 @@
     "@typescript-eslint/types" "5.12.1"
     eslint-visitor-keys "^3.0.0"
 
-"@ungap/structured-clone@^1.0.0", "@ungap/structured-clone@^1.2.0":
+"@ungap/structured-clone@^1.0.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
@@ -3314,12 +3314,12 @@ hast-util-raw@^9.0.0:
     zwitch "^2.0.0"
 
 hast-util-sanitize@^5.0.0:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/hast-util-sanitize/-/hast-util-sanitize-5.0.1.tgz#8e90068cd68e651c569960b77a1b25076579b4cf"
-  integrity sha512-IGrgWLuip4O2nq5CugXy4GI2V8kx4sFVy5Hd4vF7AR2gxS0N9s7nEAVUyeMtZKZvzrxVsHt73XdTsno1tClIkQ==
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/hast-util-sanitize/-/hast-util-sanitize-5.0.2.tgz#edb260d94e5bba2030eb9375790a8753e5bf391f"
+  integrity sha512-3yTWghByc50aGS7JlGhk61SPenfE/p1oaFeNwkOOyrscaOkMGrcW9+Cy/QAIOBpZxP1yqDIzFMR0+Np0i0+usg==
   dependencies:
     "@types/hast" "^3.0.0"
-    "@ungap/structured-clone" "^1.2.0"
+    "@ungap/structured-clone" "^1.0.0"
     unist-util-position "^5.0.0"
 
 hast-util-to-html@^9.0.0:
